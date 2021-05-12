@@ -23,10 +23,9 @@ module.exports = {
    * @type String
    * @optional
    */
-  description:
-    "Searches internet for malware sandboxes and provides links to relevant results",
-    entityTypes: ['hash','ip','domain'],
-    customTypes:[
+  description: 'Searches internet for malware sandboxes and provides links to relevant results',
+  entityTypes: ['hash', 'ip', 'domain'],
+  customTypes: [
     {
       key: 'all text',
       regex: /^[\s\S]{2,2048}/

@@ -62,6 +62,8 @@ function _createQuery(entity, searchFilters) {
 }
 
 function _searchEntity(entity, searchFilters, options, cb) {
+  if(!searchFilters.length) return cb(null, { entity, body: null });
+
   const requestOptions = {
     method: 'GET',
     uri: 'https://www.googleapis.com/customsearch/v1/',
@@ -116,8 +118,8 @@ function _formatDetails(body) {
 function doLookup(entities, options, cb) {
   let lookupResults = [];
   let tasks = [];
+
   const SEARCH_FILTER = options.sources.map((type) => type.value);
-  //const NO_SEARCH_FILTER = [];
 
   Logger.debug({ entities, options }, 'doLookup');
   entities.forEach((entity) => {
@@ -259,6 +261,12 @@ function validateOptions(userOptions, cb) {
     errors.push({
       key: 'apiKey',
       message: 'You must provide a valid Google API key'
+    });
+  }
+  if (userOptions.sources.value.length === 0) {
+    errors.push({
+      key: 'sources',
+      message: 'You must select one or more Sources to Search'
     });
   }
   cb(null, errors);
