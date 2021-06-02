@@ -3,9 +3,8 @@
 The Polarity Sandbox integrations uses the Google search API to search malware on different internet hosted sandboxes, to provide more information on the malware hashes. 
 
 
-|![image](assets/overlay.png)
-|---|---|
-|*Sandbox example* |
+<img src="assets/overlay.png" width="50%">
+
 
 ## Sandbox Integration Options
 
