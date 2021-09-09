@@ -31,7 +31,7 @@ module.exports = {
       regex: /^[\s\S]{2,2048}/
     }
   ],
-  defaultColor: 'light-brown',
+  defaultColor: 'dark-brown',
   /**
    * Provide custom component logic and template for rendering the integration details block.  If you do not
    * provide a custom template and/or component then the integration will display data as a table of key value
