@@ -1,0 +1,159 @@
+{
+  "logging": {
+    "level": "info"
+  },
+  "name": "Sandbox",
+  "acronym": "SB",
+  "description": "Searches internet for malware sandboxes and provides links to relevant results",
+  "entityTypes": [
+    "hash",
+    "domain"
+  ],
+  "customTypes": [
+    {
+      "key": "all text",
+      "regex": "^[\\s\\S]{2,2048}"
+    }
+  ],
+  "defaultColor": "dark-brown",
+  "styles": [
+    "./styles/style.less"
+  ],
+  "block": {
+    "component": {
+      "file": "./components/block.js"
+    },
+    "template": {
+      "file": "./templates/block.hbs"
+    }
+  },
+  "request": {
+    "cert": "",
+    "key": "",
+    "passphrase": "",
+    "ca": "",
+    "proxy": "",
+    "rejectUnauthorized": true
+  },
+  "onDemandOnly": true,
+  "options": [
+    {
+      "key": "apiKey",
+      "name": "API Key",
+      "description": "Valid Google CSE API Key",
+      "default": "",
+      "type": "password",
+      "userCanEdit": false,
+      "adminOnly": true
+    },
+    {
+      "key": "sources",
+      "name": "Sources to Search",
+      "description": "Choose sources to search",
+      "default": [
+        {
+          "value": "any.run",
+          "display": "any.run"
+        },
+        {
+          "value": "app.any.run",
+          "display": "app.any.run"
+        },
+        {
+          "value": "hybrid-analysis.com",
+          "display": "hybrid-analysis.com"
+        },
+        {
+          "value": "analyze.intezer.com",
+          "display": "analyze.intezer.com"
+        },
+        {
+          "value": "virustotal.com",
+          "display": "virustotal.com"
+        },
+        {
+          "value": "joesandbox.com",
+          "display": "joesandbox.com"
+        },
+        {
+          "value": "valkyrie.comodo.com",
+          "display": "valkyrie.comodo.com"
+        },
+        {
+          "value": "iris-h.services",
+          "display": "iris-h.services"
+        },
+        {
+          "value": "labs.inquest.net",
+          "display": "labs.inquest.net"
+        },
+        {
+          "value": "manalyzer.org",
+          "display": "manalyzer.org"
+        },
+        {
+          "value": "sandbox.pikker.ee",
+          "display": "sandbox.pikker.ee"
+        },
+        {
+          "value": "yomi.yoroi.company",
+          "display": "yomi.yoroi.company"
+        }
+      ],
+      "type": "select",
+      "options": [
+        {
+          "value": "any.run",
+          "display": "any.run"
+        },
+        {
+          "value": "app.any.run",
+          "display": "app.any.run"
+        },
+        {
+          "value": "hybrid-analysis.com",
+          "display": "hybrid-analysis.com"
+        },
+        {
+          "value": "analyze.intezer.com",
+          "display": "analyze.intezer.com"
+        },
+        {
+          "value": "virustotal.com",
+          "display": "virustotal.com"
+        },
+        {
+          "value": "joesandbox.com",
+          "display": "joesandbox.com"
+        },
+        {
+          "value": "valkyrie.comodo.com",
+          "display": "valkyrie.comodo.com"
+        },
+        {
+          "value": "iris-h.services",
+          "display": "iris-h.services"
+        },
+        {
+          "value": "labs.inquest.net",
+          "display": "labs.inquest.net"
+        },
+        {
+          "value": "manalyzer.org",
+          "display": "manalyzer.org"
+        },
+        {
+          "value": "sandbox.pikker.ee",
+          "display": "sandbox.pikker.ee"
+        },
+        {
+          "value": "yomi.yoroi.company",
+          "display": "yomi.yoroi.company"
+        }
+      ],
+      "multiple": true,
+      "userCanEdit": true,
+      "adminOnly": false
+    }
+  ]
+}
