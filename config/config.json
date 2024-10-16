@@ -6,10 +6,7 @@
   "name": "Sandbox",
   "acronym": "SB",
   "description": "Searches internet for malware sandboxes and provides links to relevant results",
-  "entityTypes": [
-    "hash",
-    "domain"
-  ],
+  "entityTypes": ["MD5", "SHA1", "SHA256", "domain"],
   "customTypes": [
     {
       "key": "allText",
@@ -17,9 +14,7 @@
     }
   ],
   "defaultColor": "dark-brown",
-  "styles": [
-    "./styles/style.less"
-  ],
+  "styles": ["./styles/style.less"],
   "block": {
     "component": {
       "file": "./components/block.js"
@@ -27,13 +22,6 @@
     "template": {
       "file": "./templates/block.hbs"
     }
-  },
-  "request": {
-    "cert": "",
-    "key": "",
-    "passphrase": "",
-    "ca": "",
-    "proxy": ""
   },
   "onDemandOnly": true,
   "options": [
