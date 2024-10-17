@@ -6,7 +6,7 @@
   "name": "Sandbox",
   "acronym": "SB",
   "description": "Searches internet for malware sandboxes and provides links to relevant results",
-  "entityTypes": ["MD5", "SHA1", "SHA256", "domain"],
+  "entityTypes": ["MD5", "SHA1", "SHA256", "IPv4", "IPv6", "domain"],
   "customTypes": [
     {
       "key": "allText",
