@@ -24,7 +24,7 @@ module.exports = {
    * @optional
    */
   description: 'Searches internet for malware sandboxes and provides links to relevant results',
-  entityTypes: ['hash', 'ip', 'domain'],
+  entityTypes: ['MD5', 'SHA1', 'SHA256', 'IPv4', 'IPv6', 'domain'],
   customTypes: [
     {
       key: 'allText',
@@ -64,7 +64,7 @@ module.exports = {
     ca: '',
     // An HTTP proxy to be used. Supports proxy Auth with Basic Auth, identical to support for
     // the url parameter (by embedding the auth info in the uri)
-    proxy: ""
+    proxy: ''
   },
   logging: {
     level: 'info' //trace, debug, info, warn, error, fatal
