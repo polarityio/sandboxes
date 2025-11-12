@@ -1,11 +1,11 @@
 {
   "name": "sandbox",
-  "version": "3.0.7",
+  "version": "3.1.0",
   "main": "./integration.js",
   "private": true,
   "dependencies": {
-    "async": "^3.2.5",
-    "postman-request": "^2.88.1-postman.40",
+    "async": "^3.2.6",
+    "postman-request": "^2.88.1-postman.46",
     "uuid": "^8.3.2"
   }
 }

@@ -37,7 +37,7 @@
     {
       "key": "sources",
       "name": "Sources to Search",
-      "description": "Choose sources to search",
+      "description": "Choose sources to search. This option must be set to \"Lock and show option for all users\" or \"User provides option value\".",
       "default": [
         {
           "value": "any.run",
@@ -86,6 +86,14 @@
         {
           "value": "yomi.yoroi.company",
           "display": "yomi.yoroi.company"
+        },
+        {
+          "value": "tria.ge",
+          "display": "tria.ge"
+        },
+        {
+          "value": "threatfeed.vmray.com",
+          "display": "threatfeed.vmray.com"
         }
       ],
       "type": "select",
@@ -137,10 +145,18 @@
         {
           "value": "yomi.yoroi.company",
           "display": "yomi.yoroi.company"
+        },
+        {
+          "value": "tria.ge",
+          "display": "tria.ge"
+        },
+        {
+          "value": "threatfeed.vmray.com",
+          "display": "threatfeed.vmray.com"
         }
       ],
       "multiple": true,
-      "userCanEdit": true,
+      "userCanEdit": false,
       "adminOnly": false
     }
   ]

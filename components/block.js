@@ -14,6 +14,7 @@ polarity.export = PolarityComponent.extend({
   numSourcesToSearch: Ember.computed.alias('block.storage.numSourcesToSearch'),
   init: function () {
     this._super(...arguments);
+    const searchedSources = this.get('block.userOptions.sources');
     if (!this.get('block.storage.searchFilters')) {
       this.set('block.storage', {});
       this.set('block.storage.searchFilters', [
@@ -21,73 +22,85 @@ polarity.export = PolarityComponent.extend({
           displayValue: 'app.any.run',
           filterValue: 'app.any.run',
           id: 'app-checkbox',
-          value: true
+          value: searchedSources.some((source) => source.value === 'app.any.run')
         },
         {
           displayValue: 'any.run',
           filterValue: 'any.run',
           id: 'any-checkbox',
-          value: true
+          value: searchedSources.some((source) => source.value === 'any.run')
         },
         {
           displayValue: 'VirusTotal',
           filterValue: 'virustotal.com',
           id: 'vt-checkbox',
-          value: true
+          value: searchedSources.some((source) => source.value === 'virustotal.com')
         },
         {
           displayValue: 'Joe Sandbox',
           filterValue: 'joesandbox.com',
           id: 'js-checkbox',
-          value: true
+          value: searchedSources.some((source) => source.value === 'joesandbox.com')
         },
         {
           displayValue: 'Intezer',
           filterValue: 'analyze.intezer.com',
           id: 'intezer-checkbox',
-          value: true
+          value: searchedSources.some((source) => source.value === 'analyze.intezer.com')
         },
         {
           displayValue: 'Hybrid Analysis',
           filterValue: 'hybrid-analysis.com',
           id: 'ha-checkbox',
-          value: true
+          value: searchedSources.some((source) => source.value === 'hybrid-analysis.com')
         },
         {
           displayValue: 'Valkyrie Comodo',
           filterValue: 'valkyrie.comodo.com',
           id: 'comodo-checkbox',
-          value: true
+          value: searchedSources.some((source) => source.value === 'valkyrie.comodo.com')
         },
         {
           displayValue: 'IRIS-H',
           filterValue: 'iris-h.services',
           id: 'irish-checkbox',
-          value: true
+          value: searchedSources.some((source) => source.value === 'iris-h.services')
         },
         {
           displayValue: 'Labs.Inquest',
           filterValue: 'labs.inquest.net',
           id: 'inquest-checkbox',
-          value: true
+          value: searchedSources.some((source) => source.value === 'labs.inquest.net')
         },
         {
           displayValue: 'Manalyzer',
           filterValue: 'manalyzer.org',
           id: 'manalyzer-checkbox',
-          value: true
+          value: searchedSources.some((source) => source.value === 'manalyzer.org')
         },
         {
           displayValue: 'Sandbox Pikker',
           filterValue: 'sandbox.pikker.ee',
           id: 'pikker-checkbox',
-          value: true
+          value: searchedSources.some((source) => source.value === 'sandbox.pikker.ee')
         },
         {
           displayValue: 'Yomi Yoroi',
           filterValue: 'yomi.yoroi.company',
           id: 'yomi-checkbox',
-          value: true
+          value: searchedSources.some((source) => source.value === 'yomi.yoroi.company')
+        },
+        {
+          displayValue: 'Triage',
+          filterValue: 'tria.ge',
+          id: 'tria-checkbox',
+          value: searchedSources.some((source) => source.value === 'tria.ge')
+        },
+        {
+          displayValue: 'VMRay',
+          filterValue: 'threatfeed.vmray.com',
+          id: 'vmray-checkbox',
+          value: searchedSources.some((source) => source.value === 'threatfeed.vmray.com')
         }
       ]);
       this.set('block.storage.numSourcesToSearch', this.get('block.storage.searchFilters.length'));
@@ -109,7 +122,12 @@ polarity.export = PolarityComponent.extend({
       this.set('filtering', true);
       const payload = {
         entity: this.block.entity,
-        searchFilters: this.searchFilters
+        searchFilters: this.searchFilters.reduce((acc, filter) => {
+          if (filter.value) {
+            acc.push(filter.filterValue);
+          }
+          return acc;
+        }, [])
       };
 
       this.sendIntegrationMessage(payload)

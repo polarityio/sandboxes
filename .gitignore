@@ -37,3 +37,7 @@ key/
 .histoy
 *.vscode
 .vscode
+
+#Other
+legacy_wrapper.js
+.DS_Store
