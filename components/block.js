@@ -95,12 +95,6 @@ polarity.export = PolarityComponent.extend({
           filterValue: 'tria.ge',
           id: 'tria-checkbox',
           value: searchedSources.some((source) => source.value === 'tria.ge')
-        },
-        {
-          displayValue: 'VMRay',
-          filterValue: 'threatfeed.vmray.com',
-          id: 'vmray-checkbox',
-          value: searchedSources.some((source) => source.value === 'threatfeed.vmray.com')
         }
       ]);
       this.set('block.storage.numSourcesToSearch', this.get('block.storage.searchFilters.length'));

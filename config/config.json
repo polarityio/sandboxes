@@ -90,10 +90,6 @@
         {
           "value": "tria.ge",
           "display": "tria.ge"
-        },
-        {
-          "value": "threatfeed.vmray.com",
-          "display": "threatfeed.vmray.com"
         }
       ],
       "type": "select",
@@ -149,10 +145,6 @@
         {
           "value": "tria.ge",
           "display": "tria.ge"
-        },
-        {
-          "value": "threatfeed.vmray.com",
-          "display": "threatfeed.vmray.com"
         }
       ],
       "multiple": true,
