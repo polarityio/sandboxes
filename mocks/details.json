@@ -1,0 +1,107 @@
+{
+  "icons": {
+    "any.run": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==",
+    "hybrid-analysis.com": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==",
+    "virustotal.com": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
+  },
+  "sources": [
+    "any.run",
+    "app.any.run",
+    "hybrid-analysis.com",
+    "analyze.intezer.com",
+    "virustotal.com",
+    "joesandbox.com",
+    "valkyrie.comodo.com",
+    "iris-h.services",
+    "labs.inquest.net",
+    "manalyzer.org",
+    "sandbox.pikker.ee",
+    "yomi.yoroi.company",
+    "tria.ge"
+  ],
+  "selectedSources": [
+    "any.run",
+    "hybrid-analysis.com",
+    "virustotal.com"
+  ],
+  "searchResults": {
+    "searchInformation": {
+      "searchTime": 0.456789,
+      "formattedSearchTime": "0.46",
+      "totalResults": "127",
+      "formattedTotalResults": "127"
+    },
+    "items": [
+      {
+        "icon": "any.run",
+        "displayLink": "any.run",
+        "title": "ANY.RUN - Interactive Online Malware Sandbox - 44d88612fea8a8f36de82e1278abb02f",
+        "link": "https://app.any.run/tasks/44d88612fea8a8f36de82e1278abb02f",
+        "snippet": "Analyzed 44d88612fea8a8f36de82e1278abb02f in ANY.RUN Sandbox. Verdict: Malicious activity detected. File type: PE32 executable. Network activity observed."
+      },
+      {
+        "icon": "hybrid-analysis.com",
+        "displayLink": "hybrid-analysis.com",
+        "title": "Hybrid Analysis - 44d88612fea8a8f36de82e1278abb02f Analysis",
+        "link": "https://www.hybrid-analysis.com/sample/44d88612fea8a8f36de82e1278abb02f",
+        "snippet": "Free automated malware analysis service powered by Falcon Sandbox. Analysis of 44d88612fea8a8f36de82e1278abb02f. Threat Score: 100/100. Malware detected."
+      },
+      {
+        "icon": "virustotal.com",
+        "displayLink": "virustotal.com",
+        "title": "VirusTotal - File - 44d88612fea8a8f36de82e1278abb02f",
+        "link": "https://www.virustotal.com/gui/file/44d88612fea8a8f36de82e1278abb02f",
+        "snippet": "SHA-256: 44d88612fea8a8f36de82e1278abb02f. Detection ratio: 58/71. Community score: -2. First seen: 2023-01-15 08:23:45."
+      },
+      {
+        "icon": "",
+        "displayLink": "joesandbox.com",
+        "title": "Joe Sandbox Analysis Report - 44d88612fea8a8f36de82e1278abb02f",
+        "link": "https://www.joesandbox.com/analysis/123456/0/html",
+        "snippet": "Deep malware analysis report for 44d88612fea8a8f36de82e1278abb02f. Detection: Malicious. Behavior: Registry modifications, Network connections to C2 servers."
+      },
+      {
+        "icon": "",
+        "displayLink": "tria.ge",
+        "title": "Triage Sandbox - Sample 44d88612fea8a8f36de82e1278abb02f",
+        "link": "https://tria.ge/231115-a1b2c3d4e5/behavioral1",
+        "snippet": "Automated sandbox analysis of 44d88612fea8a8f36de82e1278abb02f. Family: TrickBot. Tags: trojan, banker, information-stealer. Confidence: High."
+      },
+      {
+        "icon": "",
+        "displayLink": "analyze.intezer.com",
+        "title": "Intezer Analyze - 44d88612fea8a8f36de82e1278abb02f",
+        "link": "https://analyze.intezer.com/analyses/a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "snippet": "Genetic malware analysis for 44d88612fea8a8f36de82e1278abb02f. Verdict: Malicious. Related to: Emotet family. Code reuse detected: 89%."
+      },
+      {
+        "icon": "",
+        "displayLink": "labs.inquest.net",
+        "title": "InQuest Labs - Deep File Inspection - 44d88612fea8a8f36de82e1278abb02f",
+        "link": "https://labs.inquest.net/dfi/sha256/44d88612fea8a8f36de82e1278abb02f",
+        "snippet": "Deep file inspection results for 44d88612fea8a8f36de82e1278abb02f. Indicators: Suspicious API calls, Anti-debugging techniques, Obfuscated strings."
+      },
+      {
+        "icon": "",
+        "displayLink": "manalyzer.org",
+        "title": "Manalyzer - PE Analysis - 44d88612fea8a8f36de82e1278abb02f",
+        "link": "https://manalyzer.org/report/44d88612fea8a8f36de82e1278abb02f",
+        "snippet": "Static PE file analysis for 44d88612fea8a8f36de82e1278abb02f. Suspicious imports detected. Packer identified: UPX. Entropy: High (7.98)."
+      },
+      {
+        "icon": "",
+        "displayLink": "valkyrie.comodo.com",
+        "title": "Comodo Valkyrie - File Verdict - 44d88612fea8a8f36de82e1278abb02f",
+        "link": "https://valkyrie.comodo.com/report?hash=44d88612fea8a8f36de82e1278abb02f",
+        "snippet": "Automated file analysis by Comodo Valkyrie. Hash: 44d88612fea8a8f36de82e1278abb02f. Verdict: Malware. Risk score: 95/100."
+      },
+      {
+        "icon": "",
+        "displayLink": "sandbox.pikker.ee",
+        "title": "Pikker Sandbox - Malware Analysis - 44d88612fea8a8f36de82e1278abb02f",
+        "link": "https://sandbox.pikker.ee/sample/44d88612fea8a8f36de82e1278abb02f",
+        "snippet": "Online sandbox analysis for 44d88612fea8a8f36de82e1278abb02f. Behavioral analysis shows: File system modifications, Process injection, Network beaconing."
+      }
+    ]
+  }
+}

@@ -6,7 +6,14 @@
   "name": "Sandbox",
   "acronym": "SB",
   "description": "Searches internet for malware sandboxes and provides links to relevant results",
-  "entityTypes": ["MD5", "SHA1", "SHA256", "IPv4", "IPv6", "domain"],
+  "entityTypes": [
+    "MD5",
+    "SHA1",
+    "SHA256",
+    "IPv4",
+    "IPv6",
+    "domain"
+  ],
   "customTypes": [
     {
       "key": "allText",
@@ -14,7 +21,9 @@
     }
   ],
   "defaultColor": "dark-brown",
-  "styles": ["./styles/style.less"],
+  "styles": [
+    "./styles/style.less"
+  ],
   "block": {
     "component": {
       "file": "./components/block.js"
@@ -151,5 +160,10 @@
       "userCanEdit": false,
       "adminOnly": false
     }
-  ]
+  ],
+  "reducer": {
+    "details": {
+      "file": "./reducers/details.json"
+    }
+  }
 }

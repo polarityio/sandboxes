@@ -1,0 +1,32 @@
+{
+  "root": {
+    "path": "",
+    "on_null": "return_empty"
+  },
+  "pipeline": [
+    {
+      "op": "copy",
+      "from": "searchResults.searchInformation.totalResults",
+      "to": "reduced_results.searchResults.totalResults"
+    },
+    {
+      "op": "copy",
+      "from": "searchResults.items",
+      "to": "reduced_results.searchResults.items"
+    },
+    {
+      "op": "drop",
+      "paths": [
+        "reduced_results.searchResults.items[].displayLink"
+      ]
+    },
+    {
+      "op": "prune",
+      "strategy": "empty_values",
+      "target": "reduced_results"
+    }
+  ],
+  "output": {
+    "result": "$working.reduced_results"
+  }
+}
